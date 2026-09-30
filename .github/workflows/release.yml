@@ -1,8 +1,8 @@
 name: Release
 
 on:
-  push:
-    tags: ["*.*.*"]
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -11,12 +11,14 @@ jobs:
   check:
     uses: ./.github/workflows/check.yml
 
-  release:
+  skills:
     needs: check
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
+    env:
+      TAG: ${{ github.event.release.tag_name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,7 +27,7 @@ jobs:
         with:
           enable-cache: true
       - run: make install
-      - run: make build VERSION="$GITHUB_REF_NAME"
-      - run: gh release create "$GITHUB_REF_NAME" skills.json --title "$GITHUB_REF_NAME" --generate-notes
+      - run: make build VERSION="$TAG"
+      - run: gh release upload "$TAG" skills.json --clobber
         env:
           GH_TOKEN: ${{ github.token }}
