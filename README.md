@@ -68,8 +68,8 @@ Run `make help` to see all targets.
 
 ## Release
 
-Push a tag like `1.4.0`. The pipeline validates the skills, builds `skills.json`
-and attaches it to a GitHub release with the same name.
+Publish a GitHub release with a tag like `1.4.0`. The pipeline validates the skills,
+builds `skills.json` and attaches it to that release.
 
 To build the file locally:
 
