@@ -1,0 +1,59 @@
+name: Ruby
+description: Language features and the Rails ecosystem.
+
+skills:
+  blocks-procs:
+    name: "Blocks, Procs & Lambdas"
+    level: junior
+
+  metaprogramming:
+    name: Metaprogramming
+    level: senior
+    aliases: [method_missing, define_method]
+
+  mixins:
+    name: "Modules & Mixins"
+    level: middle
+
+  rails-mvc:
+    name: Rails MVC
+    level: junior
+
+  active-record:
+    name: Active Record
+    level: middle
+    aliases: [ORM]
+    prerequisites: [rails-mvc]
+
+  n-plus-one:
+    name: N+1 Queries
+    level: middle
+    aliases: [eager loading]
+    prerequisites: [active-record]
+
+  rspec:
+    name: RSpec
+    level: middle
+
+  gems:
+    name: "Gems & Bundler"
+    level: junior
+
+  symbols:
+    name: Symbols vs Strings
+    level: junior
+
+  enumerable:
+    name: Enumerable
+    level: junior
+    prerequisites: [blocks-procs]
+
+  sidekiq:
+    name: Background Jobs
+    level: middle
+    aliases: [Sidekiq]
+
+  rack:
+    name: Rack
+    level: senior
+    aliases: [middleware]

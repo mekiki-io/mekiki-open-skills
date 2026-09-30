@@ -1,0 +1,85 @@
+name: DevOps
+description: Delivery pipelines, infrastructure and operations.
+
+skills:
+  docker:
+    name: Docker
+    level: junior
+    aliases: [containers]
+
+  kubernetes:
+    name: Kubernetes
+    level: middle
+    aliases: [k8s]
+    prerequisites: [docker]
+
+  ci-cd:
+    name: CI/CD
+    level: junior
+    aliases: [pipelines]
+
+  terraform:
+    name: Terraform
+    level: middle
+    aliases: [IaC]
+
+  aws:
+    name: AWS Core Services
+    level: middle
+    aliases: [EC2, S3, IAM]
+
+  networking:
+    name: Networking
+    level: middle
+    aliases: [TCP/IP, DNS]
+
+  linux:
+    name: Linux
+    level: junior
+
+  observability:
+    name: Observability
+    level: senior
+    aliases: [metrics, tracing, logs]
+
+  incident-response:
+    name: Incident Response
+    level: senior
+    aliases: [on-call]
+
+  helm:
+    name: Helm
+    level: middle
+    prerequisites: [kubernetes]
+
+  gitops:
+    name: GitOps
+    level: senior
+    aliases: [Argo CD]
+    prerequisites: [kubernetes, ci-cd]
+
+  secrets:
+    name: Secrets Management
+    level: middle
+    aliases: [Vault]
+
+  load-balancing:
+    name: Load Balancing
+    level: middle
+    prerequisites: [networking]
+
+  autoscaling:
+    name: Autoscaling
+    level: senior
+    aliases: [HPA]
+    prerequisites: [kubernetes]
+
+  cost:
+    name: Cost Optimization
+    level: senior
+    aliases: [FinOps]
+
+  bash:
+    name: Bash Scripting
+    level: junior
+    aliases: [shell]

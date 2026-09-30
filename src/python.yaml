@@ -1,0 +1,128 @@
+name: Python
+description: Core language, runtime and ecosystem.
+
+skills:
+  decorators:
+    name: Decorators
+    level: middle
+    aliases: [function wrappers]
+    prerequisites: [closures, first-class-functions]
+
+  generators:
+    name: Generators
+    level: middle
+    prerequisites: [iterators]
+
+  gil:
+    name: GIL
+    level: senior
+    aliases: [Global Interpreter Lock]
+    related: [multiprocessing, asyncio]
+
+  closures:
+    name: Closures
+    level: junior
+    prerequisites: [first-class-functions]
+
+  first-class-functions:
+    name: First-class Functions
+    level: junior
+
+  iterators:
+    name: Iterators
+    level: junior
+    aliases: [iteration protocol]
+
+  context-managers:
+    name: Context Managers
+    level: middle
+    aliases: [with statement]
+    prerequisites: [exceptions]
+
+  asyncio:
+    name: Asyncio
+    level: senior
+    aliases: [async/await]
+    prerequisites: [generators]
+    related: [gil]
+
+  multiprocessing:
+    name: Multiprocessing
+    level: senior
+    related: [gil, threading]
+
+  type-hints:
+    name: Type Hints
+    level: junior
+    aliases: [typing]
+
+  dataclasses:
+    name: Dataclasses
+    level: junior
+    prerequisites: [type-hints]
+
+  descriptors:
+    name: Descriptors
+    level: senior
+    prerequisites: [mro]
+
+  metaclasses:
+    name: Metaclasses
+    level: senior
+    prerequisites: [descriptors]
+
+  memory-management:
+    name: Memory Management
+    level: senior
+    aliases: [garbage collection, reference counting]
+
+  comprehensions:
+    name: Comprehensions
+    level: junior
+
+  exceptions:
+    name: Exceptions
+    level: junior
+    aliases: [error handling]
+
+  packaging:
+    name: Packaging
+    level: middle
+    aliases: [pip, pyproject]
+
+  virtual-environments:
+    name: Virtual Environments
+    level: junior
+    aliases: [venv]
+
+  pytest:
+    name: Testing with pytest
+    level: middle
+    aliases: [fixtures]
+
+  mro:
+    name: Method Resolution Order
+    level: senior
+    aliases: [MRO, C3 linearization]
+
+  slots:
+    name: "__slots__"
+    level: middle
+    related: [memory-management]
+
+  threading:
+    name: Threading
+    level: middle
+    related: [gil]
+
+  functools:
+    name: functools
+    level: middle
+    aliases: [lru_cache, partial]
+    prerequisites: [decorators]
+
+  protocols:
+    name: Protocols
+    level: middle
+    aliases: [structural typing]
+    prerequisites: [type-hints]

@@ -1,0 +1,48 @@
+name: Soft Skills
+description: Communication, collaboration and ownership.
+
+skills:
+  communication:
+    name: Communication
+    level: junior
+
+  collaboration:
+    name: Collaboration
+    level: junior
+    aliases: [teamwork]
+
+  ownership:
+    name: Ownership
+    level: middle
+    aliases: [accountability]
+
+  adaptability:
+    name: Adaptability
+    level: junior
+
+  problem-solving:
+    name: Problem Solving
+    level: middle
+
+  time-management:
+    name: Time Management
+    level: junior
+    aliases: [prioritization]
+
+  curiosity:
+    name: Curiosity
+    level: junior
+    aliases: [learning mindset]
+
+  empathy:
+    name: Empathy
+    level: middle
+
+  presentation:
+    name: Presentation
+    level: middle
+    aliases: [public speaking]
+
+  negotiation:
+    name: Negotiation
+    level: senior

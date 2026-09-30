@@ -1,0 +1,63 @@
+name: Leadership
+description: People management and technical leadership.
+
+skills:
+  one-on-ones:
+    name: One-on-ones
+    level: middle
+
+  feedback:
+    name: Giving Feedback
+    level: middle
+
+  hiring:
+    name: Hiring
+    level: senior
+    aliases: [recruiting]
+
+  delegation:
+    name: Delegation
+    level: middle
+
+  conflict:
+    name: Conflict Resolution
+    level: senior
+
+  roadmapping:
+    name: Roadmapping
+    level: senior
+
+  stakeholders:
+    name: Stakeholder Management
+    level: senior
+
+  performance-reviews:
+    name: Performance Reviews
+    level: senior
+
+  team-topology:
+    name: Team Topologies
+    level: senior
+
+  tech-strategy:
+    name: Technical Strategy
+    level: senior
+
+  mentoring:
+    name: Mentoring
+    level: middle
+    aliases: [coaching]
+
+  decisions:
+    name: Decision Making
+    level: middle
+    aliases: [ADRs]
+
+  estimation:
+    name: Estimation
+    level: middle
+
+  incident-leadership:
+    name: Incident Leadership
+    level: senior
+    aliases: [incident commander]

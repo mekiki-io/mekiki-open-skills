@@ -1,0 +1,91 @@
+name: JavaScript
+description: Language, browser runtime and frontend frameworks.
+
+skills:
+  event-loop:
+    name: Event Loop
+    level: middle
+    aliases: [microtasks, macrotasks]
+
+  closures:
+    name: Closures
+    level: junior
+
+  promises:
+    name: Promises
+    level: junior
+    prerequisites: [event-loop]
+
+  async-await:
+    name: Async / Await
+    level: junior
+    prerequisites: [promises]
+
+  prototypes:
+    name: Prototypes
+    level: middle
+    aliases: [prototype chain]
+
+  this-binding:
+    name: this Binding
+    level: middle
+
+  hoisting:
+    name: Hoisting
+    level: junior
+    aliases: [TDZ]
+
+  modules:
+    name: ES Modules
+    level: junior
+    aliases: [import/export]
+
+  typescript:
+    name: TypeScript Basics
+    level: middle
+
+  react-hooks:
+    name: React Hooks
+    level: middle
+    aliases: [useEffect, useState]
+    prerequisites: [closures]
+
+  react-rendering:
+    name: React Rendering
+    level: senior
+    aliases: [reconciliation]
+    prerequisites: [react-hooks]
+
+  state-management:
+    name: State Management
+    level: middle
+    aliases: [Redux, Zustand]
+
+  dom-events:
+    name: DOM Events
+    level: junior
+    aliases: [bubbling, delegation]
+
+  web-performance:
+    name: Web Performance
+    level: senior
+    aliases: [Core Web Vitals]
+
+  bundlers:
+    name: Bundlers
+    level: middle
+    aliases: [Vite, webpack]
+
+  jest:
+    name: Testing with Jest
+    level: middle
+
+  xss:
+    name: "XSS & Web Security"
+    level: senior
+    aliases: [CSP]
+
+  service-workers:
+    name: Service Workers
+    level: senior
+    aliases: [PWA]
