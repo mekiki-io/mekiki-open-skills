@@ -1,0 +1,36 @@
+name: Cloud
+description: Designing solutions across cloud providers and computing models.
+
+skills:
+  serverless:
+    name: Serverless
+    level: middle
+    aliases: [AWS Lambda, Cloud Functions, Azure Functions]
+
+  gcp:
+    name: Google Cloud Platform
+    level: middle
+    aliases: [GCP]
+
+  azure:
+    name: Microsoft Azure
+    level: middle
+    aliases: [Azure]
+
+  hybrid-cloud:
+    name: Hybrid and Multi-Cloud Architecture
+    level: senior
+    aliases: [multi-cloud]
+    related: [serverless, edge-computing]
+
+  edge-computing:
+    name: Edge Computing
+    level: senior
+    aliases: [CDN edge functions]
+    related: [iot]
+
+  iot:
+    name: Internet of Things
+    level: senior
+    aliases: [IoT]
+    related: [edge-computing]
