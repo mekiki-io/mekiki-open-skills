@@ -126,3 +126,21 @@ skills:
     level: middle
     aliases: [structural typing]
     prerequisites: [type-hints]
+
+  interpreters:
+    name: Python Interpreters
+    level: middle
+    aliases: [CPython, PyPy, bytecode]
+    related: [gil, memory-management]
+
+  oop:
+    name: Object-Oriented Programming
+    level: junior
+    aliases: [classes, inheritance, magic methods]
+    related: [mro, dataclasses, protocols]
+
+  debugging:
+    name: Debugging and Troubleshooting
+    level: middle
+    aliases: [pdb, tracebacks, profiling]
+    prerequisites: [exceptions]
