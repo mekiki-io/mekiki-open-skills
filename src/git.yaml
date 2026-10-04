@@ -1,0 +1,13 @@
+name: Git
+description: Version control workflows and history management.
+
+skills:
+  merge-vs-rebase:
+    name: Merge vs Rebase
+    level: middle
+    aliases: [merge, rebase]
+
+  cherry-pick:
+    name: Cherry-pick
+    level: middle
+    related: [merge-vs-rebase]
