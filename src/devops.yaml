@@ -83,3 +83,15 @@ skills:
     name: Bash Scripting
     level: junior
     aliases: [shell]
+
+  build-tools:
+    name: Build Tools
+    level: middle
+    aliases: [Maven, Gradle, MSBuild, Make]
+    related: [ci-cd]
+
+  ci-improvement:
+    name: CI Process Improvement
+    level: senior
+    aliases: [pipeline optimization]
+    prerequisites: [ci-cd]
