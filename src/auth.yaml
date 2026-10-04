@@ -1,0 +1,26 @@
+name: Authentication and Authorization
+description: Identity, delegated access and single sign-on protocols.
+
+skills:
+  oauth2:
+    name: OAuth2
+    level: middle
+    aliases: [OAuth 2.0]
+
+  oauth2-vs-openid:
+    name: OAuth2 vs OpenID Connect
+    level: middle
+    aliases: [authentication vs authorization]
+    prerequisites: [oauth2]
+
+  grant-types:
+    name: OAuth2 Flows
+    level: middle
+    aliases: [grant types, authorization code, PKCE, client credentials]
+    prerequisites: [oauth2]
+
+  openid-integration:
+    name: OpenID Connect Integration
+    level: middle
+    aliases: [OIDC, SSO, ID token]
+    prerequisites: [oauth2-vs-openid]
