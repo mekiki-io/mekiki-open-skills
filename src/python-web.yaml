@@ -1,0 +1,24 @@
+name: Python Web Frameworks
+description: Frameworks for building web applications and APIs in Python.
+
+skills:
+  django:
+    name: Django
+    level: middle
+    aliases: [Django ORM, DRF]
+
+  flask:
+    name: Flask
+    level: middle
+    aliases: [Werkzeug, Jinja]
+
+  fastapi:
+    name: FastAPI
+    level: middle
+    aliases: [Pydantic, Starlette]
+    related: [falcon]
+
+  falcon:
+    name: Falcon
+    level: middle
+    related: [fastapi]
