@@ -1,0 +1,29 @@
+name: Security
+description: Common web vulnerabilities and secure handling of data.
+
+skills:
+  jwt:
+    name: JWT
+    level: middle
+    aliases: [JSON Web Token]
+
+  cors:
+    name: CORS
+    level: middle
+    aliases: [Cross-Origin Resource Sharing, same-origin policy]
+
+  csrf:
+    name: CSRF
+    level: middle
+    aliases: [Cross-Site Request Forgery]
+    related: [cors]
+
+  mitm:
+    name: MITM
+    level: middle
+    aliases: [Man-in-the-Middle]
+
+  hash-salting:
+    name: Password Hashing and Salting
+    level: middle
+    aliases: [salt, bcrypt, argon2]
