@@ -1,0 +1,32 @@
+name: Web Services
+description: Protocols, APIs and infrastructure behind web services.
+
+skills:
+  http:
+    name: HTTP and Web Protocols
+    level: middle
+    aliases: [HTTP/2, WebSocket, gRPC]
+
+  caching:
+    name: Caching
+    level: middle
+    aliases: [Redis, HTTP caching, CDN]
+    prerequisites: [http]
+
+  tls:
+    name: SSL/TLS
+    level: middle
+    aliases: [HTTPS, certificates]
+    prerequisites: [http]
+
+  rest-vs-rpc:
+    name: REST vs RPC
+    level: middle
+    aliases: [REST, RPC, API design]
+    prerequisites: [http]
+
+  web-servers:
+    name: Web Servers
+    level: middle
+    aliases: [Nginx, Gunicorn, Uvicorn, WSGI, ASGI]
+    prerequisites: [http]
