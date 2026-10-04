@@ -1,0 +1,97 @@
+name: AI Engineering
+description: Building with and developing alongside generative AI.
+
+skills:
+  llm:
+    name: Large Language Models
+    level: middle
+    aliases: [LLM, tokens, context window]
+
+  context-engineering:
+    name: Context Engineering
+    level: middle
+    aliases: [prompt engineering, RAG]
+    prerequisites: [llm]
+
+  ai-security:
+    name: AI Security
+    level: middle
+    aliases: [prompt injection, data leakage]
+    prerequisites: [llm]
+
+  agentic-workflows:
+    name: Agentic Workflows
+    level: middle
+    aliases: [AI agents, tool use]
+    prerequisites: [llm]
+
+  ai-code-review:
+    name: AI Code Review Tools
+    level: middle
+    related: [ai-assistants]
+
+  sdd:
+    name: Specification-Driven Development
+    level: middle
+    aliases: [SDD]
+    related: [agentic-workflows]
+
+  prompt-apps:
+    name: Prompt-Based Application Development
+    level: senior
+    prerequisites: [context-engineering]
+
+  agent-skills:
+    name: Agent Skills
+    level: senior
+    prerequisites: [agentic-workflows]
+
+  ai-assistants:
+    name: AI Assistants
+    level: senior
+    aliases: [coding assistants]
+
+  mcp:
+    name: Model Context Protocol
+    level: senior
+    aliases: [MCP]
+    prerequisites: [agentic-workflows]
+
+  genai-solutions:
+    name: Gen AI Solutions Development
+    level: senior
+    prerequisites: [prompt-apps]
+
+  genai-sdlc:
+    name: Gen AI in SDLC
+    level: senior
+    related: [ai-assistants, sdd]
+
+  openai-gpt:
+    name: OpenAI GPT Family
+    level: middle
+    aliases: [ChatGPT, GPT]
+    prerequisites: [llm]
+
+  anthropic-claude:
+    name: Anthropic Claude
+    level: middle
+    aliases: [Claude, Claude Code]
+    prerequisites: [llm]
+
+  microsoft-copilot:
+    name: Microsoft Copilot
+    level: middle
+    aliases: [GitHub Copilot]
+    prerequisites: [llm]
+
+  google-gemini:
+    name: Google Gemini Enterprise
+    level: middle
+    aliases: [Gemini]
+    prerequisites: [llm]
+
+  deepseek:
+    name: DeepSeek
+    level: middle
+    prerequisites: [llm]
