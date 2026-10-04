@@ -42,6 +42,7 @@ skills:
   tech-strategy:
     name: Technical Strategy
     level: senior
+    aliases: [tech stack choice]
 
   mentoring:
     name: Mentoring
@@ -61,3 +62,26 @@ skills:
     name: Incident Leadership
     level: senior
     aliases: [incident commander]
+
+  code-review-culture:
+    name: Code Review Culture
+    level: senior
+    aliases: [review standards]
+    related: [feedback, mentoring]
+
+  tech-debt:
+    name: Tech Debt Management
+    level: senior
+    aliases: [technical debt]
+    related: [roadmapping, tech-strategy]
+
+  onboarding:
+    name: Project Onboarding and Offboarding
+    level: senior
+    aliases: [knowledge transfer, leaving a project]
+
+  ambiguity:
+    name: Working with Incomplete Information
+    level: senior
+    aliases: [lack of information, ambiguity]
+    related: [decisions]
