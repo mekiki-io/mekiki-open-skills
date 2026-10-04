@@ -1,0 +1,42 @@
+name: SDLC
+description: Software development lifecycle, processes and methodologies.
+
+skills:
+  methodology:
+    name: Software Development Methodology
+    level: middle
+    aliases: [Agile, SDLC models]
+
+  scrum:
+    name: Scrum
+    level: junior
+    aliases: [sprints]
+    prerequisites: [methodology]
+
+  kanban:
+    name: Kanban
+    level: junior
+    aliases: [WIP limits]
+    prerequisites: [methodology]
+
+  waterfall:
+    name: Waterfall
+    level: junior
+    prerequisites: [methodology]
+
+  code-review:
+    name: Code Review
+    level: middle
+    aliases: [pull requests]
+    related: [code-standards]
+
+  release-strategy:
+    name: Release Strategy
+    level: middle
+    aliases: [semantic versioning, feature flags, canary releases]
+
+  code-standards:
+    name: Code Standards
+    level: middle
+    aliases: [style guides, linters]
+    related: [code-review]
