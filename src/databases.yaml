@@ -1,0 +1,35 @@
+name: Databases
+description: Relational and non-relational data storage and modeling.
+
+skills:
+  sql-vs-nosql:
+    name: SQL vs NoSQL
+    level: middle
+    aliases: [relational vs non-relational]
+
+  indexes:
+    name: Indexes
+    level: middle
+    aliases: [B-tree, query plans]
+
+  normalization:
+    name: Normalization
+    level: middle
+    aliases: [normal forms, denormalization]
+    related: [foreign-keys]
+
+  foreign-keys:
+    name: Foreign Keys
+    level: junior
+    aliases: [FK, referential integrity]
+
+  triggers:
+    name: Triggers
+    level: middle
+    related: [stored-procedures]
+
+  stored-procedures:
+    name: Stored Procedures
+    level: middle
+    aliases: [SP]
+    related: [triggers]
