@@ -1,0 +1,26 @@
+name: Architecture
+description: Software design principles and system architecture.
+
+skills:
+  patterns:
+    name: Design Patterns
+    level: middle
+    aliases: [GoF]
+    related: [solid]
+
+  solid:
+    name: SOLID
+    level: middle
+    aliases: [SOLID principles]
+
+  microservices:
+    name: Microservices
+    level: middle
+    aliases: [service-oriented architecture]
+    related: [pub-sub]
+
+  pub-sub:
+    name: Pub/Sub
+    level: middle
+    aliases: [publish-subscribe, message brokers, Kafka, RabbitMQ]
+    related: [microservices]
