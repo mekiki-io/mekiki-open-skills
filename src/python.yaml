@@ -144,3 +144,21 @@ skills:
     level: middle
     aliases: [pdb, tracebacks, profiling]
     prerequisites: [exceptions]
+
+  basics:
+    name: Python Basics
+    level: junior
+    aliases: [syntax, built-in types, control flow]
+
+  unit-testing:
+    name: Unit Testing
+    level: middle
+    aliases: [test doubles, fakes, mocks]
+    related: [pytest]
+
+  test-frameworks:
+    name: Test Frameworks Comparison
+    level: middle
+    aliases: [unittest, pytest, Robot Framework]
+    prerequisites: [unit-testing]
+    related: [pytest]
