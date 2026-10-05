@@ -16,7 +16,7 @@ skills:
   ci-cd:
     name: CI/CD
     level: junior
-    aliases: [pipelines]
+    aliases: [pipelines, Jenkins, TeamCity]
 
   terraform:
     name: Terraform
@@ -95,3 +95,34 @@ skills:
     level: senior
     aliases: [pipeline optimization]
     prerequisites: [ci-cd]
+
+  containerization-vs-virtualization:
+    name: Containerization vs Virtualization
+    level: middle
+    aliases: [containers vs VMs, hypervisor]
+    related: [docker]
+
+  docker-images:
+    name: Image vs Container
+    level: middle
+    aliases: [Dockerfile, layers]
+    prerequisites: [docker]
+
+  docker-volumes:
+    name: Docker Volumes
+    level: middle
+    aliases: [bind mounts, persistent storage]
+    prerequisites: [docker]
+
+  docker-ports:
+    name: Docker Ports
+    level: middle
+    aliases: [port mapping, publishing ports]
+    prerequisites: [docker]
+    related: [networking]
+
+  docker-compose:
+    name: Docker Compose
+    level: middle
+    aliases: [compose, multi-container apps]
+    prerequisites: [docker]
