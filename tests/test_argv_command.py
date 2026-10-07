@@ -77,3 +77,16 @@ def test_refuses_check_of_duplicate_keys(tmp_path: Path) -> None:
         ArgvCommand(
             ["check", "--source", str(tmp_path), "--previous", str(tmp_path)]
         ).run()
+
+
+def test_refuses_check_of_circular_prerequisites(tmp_path: Path) -> None:
+    (tmp_path / "go.yaml").write_text(
+        "name: Go\ndescription: G.\nskills:\n"
+        "  chan:\n    name: C\n    level: middle\n    prerequisites: [select]\n"
+        "  select:\n    name: S\n    level: middle\n    prerequisites: [chan]\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(Exception, match=r"go\.yaml: chan: prerequisites form a cycle"):
+        ArgvCommand(
+            ["check", "--source", str(tmp_path), "--previous", str(tmp_path)]
+        ).run()

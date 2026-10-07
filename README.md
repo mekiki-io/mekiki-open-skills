@@ -45,6 +45,7 @@ The full schema is in [`catalog/schema.json`](catalog/schema.json).
 
 - Category ids and skill keys are lowercase words joined by `-`.
 - `prerequisites` and `related` point to existing skills of the same file.
+- `prerequisites` never form a cycle, like `a` needs `b` and `b` needs `a`.
 - **Keys live forever.** Users reference skills by key, so a released key can not be
   removed or renamed. Change `name` or add `aliases` instead.
 
