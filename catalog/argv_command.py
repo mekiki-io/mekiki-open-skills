@@ -6,6 +6,7 @@ from catalog.build_command import BuildCommand
 from catalog.check_command import CheckCommand
 from catalog.checked_catalog import CheckedCatalog
 from catalog.command import Command
+from catalog.cycles_check import CyclesCheck
 from catalog.dir_catalog import DirCatalog
 from catalog.json_release import JsonRelease
 from catalog.kept_keys_check import KeptKeysCheck
@@ -51,6 +52,7 @@ class ArgvCommand(Command):
                     [
                         SchemaCheck(source),
                         ReferencesCheck(source),
+                        CyclesCheck(source),
                         KeptKeysCheck(source, DirCatalog(arguments.previous)),
                     ]
                 ),
@@ -62,7 +64,14 @@ class ArgvCommand(Command):
         return BuildCommand(
             JsonRelease(
                 CheckedCatalog(
-                    source, StagedChecks([SchemaCheck(source), ReferencesCheck(source)])
+                    source,
+                    StagedChecks(
+                        [
+                            SchemaCheck(source),
+                            ReferencesCheck(source),
+                            CyclesCheck(source),
+                        ]
+                    ),
                 ),
                 Version(arguments.version),
             ),
