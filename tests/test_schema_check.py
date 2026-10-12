@@ -202,3 +202,34 @@ def test_refuses_file_name_that_is_not_slug() -> None:
         ),
         "file name is the category id and must be a slug",
     )
+
+
+# TODO: Bug: skill key with trailing newline passes schema check,
+# https://github.com/mekiki-io/mekiki-open-skills/pull/26
+@pytest.mark.skip(
+    reason="Bug: skill key with trailing newline passes schema check, https://github.com/mekiki-io/mekiki-open-skills/pull/26"
+)
+def test_refuses_skill_key_with_trailing_newline() -> None:
+    assert_that(
+        SchemaCheck(
+            FakeCatalog(
+                [
+                    FakeCategory(
+                        "lua",
+                        {
+                            "name": "Lua",
+                            "description": "Scripting.",
+                            "skills": {
+                                "coroutines\n": {
+                                    "name": "Coroutines",
+                                    "level": "middle",
+                                }
+                            },
+                        },
+                    )
+                ]
+            )
+        ).problems(),
+        has_length(1),
+        "a skill key with a trailing newline is not a slug and must be refused",
+    )
