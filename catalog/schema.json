@@ -15,7 +15,7 @@
     }
   },
   "$defs": {
-    "key": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "key": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(?!\\n)$" },
     "skill": {
       "type": "object",
       "additionalProperties": false,
