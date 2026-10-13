@@ -204,11 +204,6 @@ def test_refuses_file_name_that_is_not_slug() -> None:
     )
 
 
-# TODO: Bug: skill key with trailing newline passes schema check,
-# https://github.com/mekiki-io/mekiki-open-skills/pull/26
-@pytest.mark.skip(
-    reason="Bug: skill key with trailing newline passes schema check, https://github.com/mekiki-io/mekiki-open-skills/pull/26"
-)
 def test_refuses_skill_key_with_trailing_newline() -> None:
     assert_that(
         SchemaCheck(
