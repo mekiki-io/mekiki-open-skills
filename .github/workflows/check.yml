@@ -30,8 +30,10 @@ jobs:
       - uses: astral-sh/setup-uv@v10.2.0
         with:
           enable-cache: true
-      - run: make install
-      - run: make unit
+      - uses: lymagics/aka-midori@v0.0.2
+        with:
+          install: make install
+          test: make unit
 
   skills:
     runs-on: ubuntu-latest
