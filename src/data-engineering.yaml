@@ -1,0 +1,69 @@
+name: Data Engineering
+description: Data pipelines, storage formats, data lakes and governance.
+
+skills:
+  data-libraries:
+    name: Python Data Analysis Libraries
+    level: middle
+    aliases: [pandas, NumPy, Polars]
+
+  orchestration:
+    name: Pipeline Orchestration
+    level: middle
+    aliases: [Airflow, Kubeflow, DAGs, custom operators]
+
+  storage-formats:
+    name: Storage Data Formats
+    level: middle
+    aliases: [Parquet, ORC, Avro]
+
+  oltp-vs-olap:
+    name: OLTP vs OLAP
+    level: middle
+    aliases: [star schema, data warehouse]
+
+  transformations:
+    name: Data Transformations in SQL and Python
+    level: middle
+    aliases: [ETL, ELT]
+    related: [data-libraries]
+
+  data-lakes:
+    name: Data Lakes
+    level: senior
+    aliases: [lakehouse]
+    prerequisites: [storage-formats]
+
+  pipeline-iac:
+    name: Pipeline Deployment with IaC
+    level: senior
+    aliases: [Terraform, CloudFormation, CDK]
+    prerequisites: [orchestration]
+
+  data-quality:
+    name: Data Quality
+    level: senior
+    aliases: [data quality metrics, data validation]
+
+  search:
+    name: Data and Search Technologies
+    level: senior
+    aliases: [Elasticsearch, OpenSearch, full-text search]
+
+  lake-schema:
+    name: Data Lake Schema Design
+    level: senior
+    aliases: [staging layer, presentation layer, medallion architecture]
+    prerequisites: [data-lakes]
+
+  data-security:
+    name: Data Security and RBAC
+    level: senior
+    aliases: [role-based access control, column masking]
+    related: [data-governance]
+
+  data-governance:
+    name: Data Governance
+    level: senior
+    aliases: [data catalog, data lineage]
+    related: [data-security, data-quality]

@@ -34,3 +34,31 @@ skills:
     level: senior
     aliases: [IoT]
     related: [edge-computing]
+
+  cloud-security:
+    name: Cloud Security
+    level: senior
+    aliases: [Amazon Cognito, API Gateway keys, JWT]
+
+  cloud-etl:
+    name: Cloud ETL/ELT Pipelines
+    level: senior
+    aliases: [AWS Glue, Step Functions, Dataflow, Azure Data Factory]
+    related: [serverless]
+
+  cloud-queues:
+    name: Cloud Queues and Messaging
+    level: senior
+    aliases: [AWS SQS, EventBridge, Google Cloud Pub/Sub, Firebase Cloud Messaging, Azure Queue Storage]
+    related: [serverless]
+
+  cloud-monitoring:
+    name: Cloud Monitoring
+    level: senior
+    aliases: [AWS CloudWatch, Azure Monitor, Google Cloud Monitoring]
+
+  technology-selection:
+    name: Cloud Technology Selection
+    level: senior
+    aliases: [scalability, high availability, cost trade-offs]
+    related: [hybrid-cloud]
