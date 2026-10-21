@@ -24,3 +24,9 @@ skills:
     level: middle
     aliases: [publish-subscribe, message brokers, Kafka, RabbitMQ]
     related: [microservices]
+
+  fault-tolerance:
+    name: Fault-Tolerant Communication
+    level: middle
+    aliases: [retry, circuit breaker, exponential backoff]
+    related: [microservices]

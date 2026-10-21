@@ -11,3 +11,9 @@ skills:
     name: Cherry-pick
     level: middle
     related: [merge-vs-rebase]
+
+  branching-strategies:
+    name: Branching Strategies
+    level: middle
+    aliases: [Git Flow, GitHub Flow, trunk-based development]
+    related: [merge-vs-rebase]
