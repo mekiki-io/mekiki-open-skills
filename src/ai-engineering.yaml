@@ -95,3 +95,28 @@ skills:
     name: DeepSeek
     level: middle
     prerequisites: [llm]
+
+  genai-evaluation:
+    name: GenAI Evaluation Metrics
+    level: senior
+    aliases: [LLM evals, LLM-as-a-judge, RAGAS]
+    prerequisites: [llm]
+    related: [context-engineering]
+
+  langchain:
+    name: LangChain
+    level: middle
+    aliases: [LCEL]
+    prerequisites: [llm]
+    related: [langgraph, pydantic-ai]
+
+  langgraph:
+    name: LangGraph
+    level: senior
+    prerequisites: [langchain, agentic-workflows]
+
+  pydantic-ai:
+    name: Pydantic AI
+    level: middle
+    prerequisites: [agentic-workflows]
+    related: [langchain]

@@ -2,6 +2,11 @@ name: Cloud
 description: Designing solutions across cloud providers and computing models.
 
 skills:
+  cloud-fundamentals:
+    name: Cloud Fundamentals
+    level: junior
+    aliases: [IaaS, PaaS, SaaS, shared responsibility model]
+
   serverless:
     name: Serverless
     level: middle

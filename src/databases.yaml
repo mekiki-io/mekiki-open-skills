@@ -33,3 +33,9 @@ skills:
     level: middle
     aliases: [SP]
     related: [triggers]
+
+  vector-databases:
+    name: Vector Databases
+    level: middle
+    aliases: [embeddings, similarity search, pgvector, Pinecone, Chroma]
+    related: [indexes, sql-vs-nosql]
