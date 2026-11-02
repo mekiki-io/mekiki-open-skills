@@ -89,3 +89,15 @@ skills:
     name: Service Workers
     level: senior
     aliases: [PWA]
+
+  nodejs:
+    name: Node.js
+    level: middle
+    aliases: [Node, npm]
+    prerequisites: [event-loop, modules]
+
+  angular:
+    name: Angular
+    level: middle
+    aliases: [AngularJS]
+    related: [typescript]

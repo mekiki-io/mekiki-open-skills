@@ -22,3 +22,7 @@ skills:
     name: Falcon
     level: middle
     related: [fastapi]
+
+  streamlit:
+    name: Streamlit
+    level: junior

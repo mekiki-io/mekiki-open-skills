@@ -10,7 +10,7 @@ skills:
   context-engineering:
     name: Context Engineering
     level: middle
-    aliases: [prompt engineering, RAG]
+    aliases: [prompt engineering, RAG, context management]
     prerequisites: [llm]
 
   ai-security:
@@ -120,3 +120,115 @@ skills:
     level: middle
     prerequisites: [agentic-workflows]
     related: [langchain]
+
+  llm-streaming:
+    name: LLM Response Streaming
+    level: middle
+    aliases: [streaming for chat-bots, server-sent events]
+    prerequisites: [llm]
+
+  ai-product-lifecycle:
+    name: AI Product Lifecycle Management
+    level: senior
+    aliases: [LLMOps]
+    related: [genai-sdlc, genai-evaluation]
+
+  semantic-kernel:
+    name: Semantic Kernel
+    level: middle
+    prerequisites: [agentic-workflows]
+    related: [langchain]
+
+  agent-memory:
+    name: Agent Memory Management
+    level: senior
+    aliases: [short-term memory, long-term memory, tool calling]
+    prerequisites: [agentic-workflows]
+    related: [context-engineering]
+
+  bedrock-agentcore:
+    name: Amazon Bedrock AgentCore
+    level: senior
+    aliases: [AgentCore]
+    prerequisites: [agentic-workflows]
+
+  claude-agent-sdk:
+    name: Claude Agent SDK
+    level: middle
+    prerequisites: [agentic-workflows]
+    related: [anthropic-claude]
+
+  openai-agents-sdk:
+    name: OpenAI Agents SDK
+    level: middle
+    prerequisites: [agentic-workflows]
+    related: [openai-gpt]
+
+  google-adk:
+    name: Google ADK
+    level: middle
+    aliases: [Agent Development Kit]
+    prerequisites: [agentic-workflows]
+    related: [google-gemini]
+
+  agentic-patterns:
+    name: Agentic Design Patterns
+    level: senior
+    aliases: [ReAct, reflection, planning, multi-agent orchestration]
+    prerequisites: [agentic-workflows]
+
+  a2a:
+    name: Agent2Agent Protocol
+    level: senior
+    aliases: [A2A, agent collaboration protocols]
+    prerequisites: [agentic-workflows]
+    related: [mcp]
+
+  agentic-rag:
+    name: RAG vs Agentic RAG
+    level: senior
+    aliases: [Agentic RAG]
+    prerequisites: [context-engineering, agentic-workflows]
+
+  llm-observability:
+    name: LLM Observability
+    level: senior
+    aliases: [LLM tracing, LangSmith, Langfuse]
+    prerequisites: [llm]
+    related: [genai-evaluation]
+
+  fine-tuning:
+    name: Model Tuning
+    level: senior
+    aliases: [fine-tuning, LoRA, PEFT]
+    prerequisites: [llm]
+
+  low-code-ai:
+    name: Low-Code AI Tools
+    level: middle
+    aliases: [n8n, Flowise, Copilot Studio]
+    related: [agentic-workflows]
+
+  multimodal:
+    name: Multimodal Systems
+    level: senior
+    aliases: [voice, vision, image generation]
+    prerequisites: [llm]
+
+  llm-cost:
+    name: LLM Cost Optimization
+    level: senior
+    aliases: [token usage, prompt caching, model routing]
+    prerequisites: [llm]
+
+  human-in-the-loop:
+    name: Human-in-the-Loop
+    level: senior
+    aliases: [HITL, feedback loops, human review]
+    related: [agentic-workflows, genai-evaluation]
+
+  ai-testing:
+    name: Testing AI Applications
+    level: senior
+    aliases: [LLM testing]
+    related: [genai-evaluation]
