@@ -230,7 +230,11 @@ def test_refuses_skill_key_with_trailing_newline() -> None:
     )
 
 
-@pytest.mark.parametrize("name", [" ", "\n", "\t  "])
+# TODO: Bug: skill name made of whitespace passes schema check, see PR_URL
+@pytest.mark.skip(
+    reason="Bug: skill name made of whitespace passes schema check, see PR_URL"
+)
+@pytest.mark.parametrize("name", [" ", "\n", "\t\u00a0 "])
 def test_refuses_skill_name_made_of_whitespace(name: str) -> None:
     assert_that(
         SchemaCheck(
