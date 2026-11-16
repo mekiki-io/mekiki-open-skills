@@ -228,3 +228,25 @@ def test_refuses_skill_key_with_trailing_newline() -> None:
         has_length(1),
         "a skill key with a trailing newline is not a slug and must be refused",
     )
+
+
+@pytest.mark.parametrize("name", [" ", "\n", "\t\u00a0 "])
+def test_refuses_skill_name_made_of_whitespace(name: str) -> None:
+    assert_that(
+        SchemaCheck(
+            FakeCatalog(
+                [
+                    FakeCategory(
+                        "haskell",
+                        {
+                            "name": "Haskell",
+                            "description": "Lazy.",
+                            "skills": {"monads": {"name": name, "level": "senior"}},
+                        },
+                    )
+                ]
+            )
+        ).problems(),
+        has_length(1),
+        f"skill name {name!r} has no visible text and must be refused",
+    )
